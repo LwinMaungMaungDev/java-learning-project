@@ -14,4 +14,11 @@ class SumAverage {
 /*
   Run this program by passing command-line arguments
   java SumAverage 1 2 3
+
+  An important thing to note about the arguments you pass into a Java program 
+  is that those arguments will be stored in an array of strings. 
+  This means that any arguments you pass to your Java program will be 
+  converted to strings so they can be stored in the argument array.
+  To treat them as non-strings, you’ll have to convert them to whatever type 
+  you want them to be.
 */
