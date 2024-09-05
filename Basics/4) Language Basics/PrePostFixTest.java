@@ -37,7 +37,8 @@ class PrePostFixTest {
     Technically, this description is not entirely correct. In reality, Java
     always completely evaluates all expressions on the right of an expression before
     assigning that value to a variable, so the concept of “assigning x to y before x is
-    incremented” isn’t precisely right. Instead, Java takes the value of x and “remembers” it, evaluates (increments) x, and then assigns the original value of x to y.
+    incremented” isn’t precisely right. Instead, Java takes the value of x and “remembers” it, 
+    evaluates (increments) x, and then assigns the original value of x to y.
     Although in most simple cases this distinction may not be important, for more
     complex expressions with side effects it may change the behavior of the expression
     overall. See the Language Specification for many more details about the details of

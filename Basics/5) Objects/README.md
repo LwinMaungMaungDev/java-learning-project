@@ -1,26 +1,14 @@
 # What new Does
 
-What does new do? When you use the new operator, several things happen: first, the new instance
-of the given class is created, and memory is allocated for it. In addition (and most importantly),
-when the new object is created, a special method defined in the given class is called. This special
-method is called a constructor.
+What does new do? When you use the new operator, several things happen: first, the new instance of the given class is created, and memory is allocated for it. In addition (and most importantly), when the new object is created, a special method defined in the given class is called. This special method is called a constructor.
 
-Constructors are special methods for creating and initializing new instances of classes.
-Constructors initialize the new object and its variables, create any other objects that object
-needs, and generally perform any other operations the object needs to run.
+Constructors are special methods for creating and initializing new instances of classes. Constructors initialize the new object and its variables, create any other objects that object needs, and generally perform any other operations the object needs to run.
 
-Multiple constructor definitions in a class can each have a different number or type of
-arguments—then, when you use new, you can specify different arguments in the argument list,
-and the right constructor for those arguments will be called. When you create your own classes, you can define as many constructors as you need to
-implement that class’s behavior.
+Multiple constructor definitions in a class can each have a different number or type of arguments—then, when you use new, you can specify different arguments in the argument list, and the right constructor for those arguments will be called. When you create your own classes, you can define as many constructors as you need to implement that class’s behavior.
 
 # Class Variables
 
-With instance variables, each new instance of the class gets a new copy of the instance variables
-that class defines. Each instance can then change the values of those instance variables without
-affecting any other instances. With class variables, there is only one copy of that variable. Every
-instance of the class has access to that variable, but there is only one value. Changing the value
-of that variable changes it for all the instances of that class.
+With instance variables, each new instance of the class gets a new copy of the instance variables that class defines. Each instance can then change the values of those instance variables without affecting any other instances. With class variables, there is only one copy of that variable. Every instance of the class has access to that variable, but there is only one value. Changing the value of that variable changes it for all the instances of that class.
 
 You define class variables by including the static keyword before the variable itself.
 
@@ -30,11 +18,7 @@ FamilyMember dad = new FamilyMember()
 dad.surname
 FamilyMember.surname
 
-Because you can use an instance to change the value of a class variable, it's easy to become
-confused about class variables and where their values are coming from (remember, the value of
-a class variable affects all the instances). For this reason, it's a good idea to use the name of the
-class when you refer to a class variable—it makes your code easier to read and strange results
-easier to debug.
+Because you can use an instance to change the value of a class variable, it's easy to become confused about class variables and where their values are coming from (remember, the value of a class variable affects all the instances). For this reason, it's a good idea to use the name of the class when you refer to a class variable—it makes your code easier to read and strange results easier to debug.
 
 # Methods
 
