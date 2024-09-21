@@ -34,8 +34,7 @@ Class methods, like class variables, apply to the class as a whole and not to it
 
 Class methods can also be useful for gathering general methods together in one place (the class). For example, the Math class, defined in the java.lang package, contains a large set of mathematical operations as class methods—there are no instances of the class Math, but you can still use its methods with numeric or boolean arguments.
 
-To call a class method, use dot notation as you do with instance methods. As with class variables, you can use either an instance of the class or the class itself on the left site of the dot. However,
-for the same reasons noted in the discussion on class variables, using the name of the class for class variables makes your code easier to read. The last two lines in this example produce the same result:
+To call a class method, use dot notation as you do with instance methods. As with class variables, you can use either an instance of the class or the class itself on the left site of the dot. However, for the same reasons noted in the discussion on class variables, using the name of the class for class variables makes your code easier to read. The last two lines in this example produce the same result:
 
 String s, s2;
 s = "foo";
@@ -69,8 +68,7 @@ Note that because the precedence of casting is higher than that of arithmetic, y
 
 Instances of classes can also be cast to instances of other classes, with one restriction: the class of the object you’re casting and the class you’re casting it to must be related by inheritance; that is, you can cast an object only to an instance of its class's sub- or superclass—not to any random class.
 
-Analogous to converting a primitive value to a larger type, some objects may not need to be cast explicitly. In particular, because instances’ subclasses usually contain all the information that instances’ superclasses do, you can use an instance of a subclass anywhere a superclass is expected. Suppose you have a method that takes two arguments: one of type Object, and one of type Number. You don’t have to pass instances of those particular classes to that method. For the Object
-argument, you can pass any subclass of Object (any object, in other words), and for the Number argument you can pass in any instance of any subclass of Number (Integer, Boolean, Float, and so on).
+Analogous to converting a primitive value to a larger type, some objects may not need to be cast explicitly. In particular, because instances’ subclasses usually contain all the information that instances’ superclasses do, you can use an instance of a subclass anywhere a superclass is expected. Suppose you have a method that takes two arguments: one of type Object, and one of type Number. You don’t have to pass instances of those particular classes to that method. For the Object argument, you can pass any subclass of Object (any object, in other words), and for the Number argument you can pass in any instance of any subclass of Number (Integer, Boolean, Float, and so on).
 
 Casting an object to an instance of one of that object’s superclasses loses the information the
 original subclass provided and requires a specific cast. To cast an object to another class, you use
@@ -106,8 +104,7 @@ Once you have actual objects, you can treat those values as objects. Then, when 
 
 The operators for equality: == (equal) and != (not equal). These operators, when used with objects, tests whether the two operands refer to exactly the same object.
 
-If you want to be able to compare instances of your class and have
-meaningful results? You have to implement special methods in your class, and you have to call those methods using those method names.
+If you want to be able to compare instances of your class and have meaningful results? You have to implement special methods in your class, and you have to call those methods using those method names.
 
 It is possible to have two strings, two independent objects in memory with the same values—that is, the same characters in the same order.
 According to the == operator, however, those two String objects will not be equal, because, although their contents are the same, they are not the same object.
